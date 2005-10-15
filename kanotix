@@ -1,0 +1,2 @@
+install pci:v00001260d00003873sv00001186sd00003700bc02sc80i00 /sbin/modprobe hostap_pci
+install pci:v00001260d00003890sv00001113sd0000EE03bc02sc80i00 /sbin/modprobe ndiswrapper
