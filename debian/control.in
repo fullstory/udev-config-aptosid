@@ -2,7 +2,7 @@ Source: kanotix-udev-config
 Section: admin
 Priority: extra
 Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
-Build-Depends: @cdbs@
+Build-Depends-Indep: @cdbs@
 Standards-Version: 3.6.2
 
 Package: kanotix-udev-config
