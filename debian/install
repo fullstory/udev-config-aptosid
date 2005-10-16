@@ -1,1 +1,2 @@
-kanotix	etc/modprobe.d/
+kanotix		etc/modprobe.d/
+fix-udev-lan	usr/sbin/

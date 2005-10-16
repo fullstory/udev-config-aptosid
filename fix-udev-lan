@@ -1,0 +1,22 @@
+#!/bin/sh
+if [ -x /etc/init.d/ifrename ]; then
+ change=change$RANDOM
+ count=0
+ LANG= ifconfig -a|grep Ethernet|awk '/HWaddr/{print $1" "$5}'|grep -v 00:00:00:00:00:00|while read dev mac; do
+  if ! [ "$(ethtool -i $dev 2>/dev/null|awk '/^driver:/{print $2}')" == "hostap" ]; then
+   devnew=lan$count
+   echo $devnew mac $mac
+   count=$(($count + 1))
+   perl -pi -e "s|$dev|$change|g" /etc/network/interfaces
+   perl -pi -e "s|$devnew|$dev|g" /etc/network/interfaces
+   perl -pi -e "s|$change|$devnew|g" /etc/network/interfaces
+   mv -f /etc/network/wep.$dev /etc/network/wep.$change 2>/dev/null
+   mv -f /etc/network/wep.$devnew /etc/network/wep.$dev 2>/dev/null
+   mv -f /etc/network/wep.$change /etc/network/wep.$devnew 2>/dev/null
+  fi
+ done > /etc/iftab
+ [ -x /usr/sbin/unfreeze-rc.d ] && /usr/sbin/unfreeze-rc.d
+ update-rc.d -f ifrename remove &>/dev/null
+ update-rc.d ifrename start 40 S . &>/dev/null
+ [ -x /usr/sbin/freeze-rc.d ] && /usr/sbin/freeze-rc.d
+fi

@@ -8,5 +8,6 @@ Standards-Version: 3.6.2
 Package: kanotix-udev-config
 Architecture: all
 Depends: udev
+Replaces: kanotix-scripts (<= 0.1.2)
 Description: custom configuration for udev
  Configure PCI IDs and udev events needed by KANOTIX.

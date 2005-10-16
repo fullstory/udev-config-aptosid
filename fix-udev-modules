@@ -1,0 +1,51 @@
+#!/bin/sh
+LOADED=$(lsmod|awk '{print $1}'|sed 's/_/-/g'|sort|uniq)
+ACPI=$(ls /lib/modules/$(uname -r)/kernel/drivers/acpi/|sed 's/\.ko//'|sed 's/_/-/g')
+CPUFREQ=$(ls /lib/modules/$(uname -r)/kernel/arch/*/kernel/cpu/cpufreq/|sed 's/\.ko//'|sed 's/_/-/g')
+EXTRA="capability dazuko fuse pcspkr ppa ppdev tun ndiswrapper"
+LOADED_ACPI=$(echo $LOADED $ACPI|tr ' ' '\n'|sort|uniq -d)
+LOADED_CPUFREQ=$(echo $LOADED $CPUFREQ|tr ' ' '\n'|sort|uniq -d)
+LOADED_EXTRA=$(echo $LOADED $EXTRA|tr ' ' '\n'|sort|uniq -d)
+echo Loaded ACPI: $LOADED_ACPI
+echo Loaded CpuFreq: $LOADED_CPUFREQ
+echo Loaded Extra: $LOADED_EXTRA
+mkdir -p /etc/default
+[ "$LOADED_ACPI" ] && cat > /etc/default/acpid <<EOF
+# Specify options for acpid startup, Debian default is to enable the
+# use of sockets at a non-default position
+OPTIONS="-s /var/run/acpid.socket"
+
+# Specify modules to load on acpid's startup
+# MODULES may be uncommented to load "none", contain the string "all"
+# to load all acpi related modules or simply a space seperated list
+# of modules to be probed.
+MODULES="$(echo $LOADED_ACPI)"
+EOF
+rm -f /etc/modules /etc/modules-*
+[ "$LOADED_CPUFREQ" ] && cat > /etc/modules <<EOF
+$LOADED_CPUFREQ
+EOF
+[ "$LOADED_EXTRA" ] && cat >> /etc/modules <<EOF
+$LOADED_EXTRA
+EOF
+cat > /etc/modprobe.d/kanotix <<EOF
+install pci:v00001260d00003873sv00001186sd00003700bc02sc80i00 /sbin/modprobe hostap-pci
+install pci:v00001260d00003890sv00001113sd0000EE03bc02sc80i00 /sbin/modprobe ndiswrapper
+install pci:v00001244d00000A00sv*sd*bc*sc*i* /bin/true
+install pci:v00001244d00000E00sv*sd*bc*sc*i* /bin/true
+install pci:v00001260d00003872sv*sd*bc*sc*i* /sbin/modprobe hostap-pci
+install pci:v00001260d00003873sv*sd*bc*sc*i* /sbin/modprobe hostap-pci
+install pci:v0000167Dd0000A000sv*sd*bc*sc*i* /sbin/modprobe hostap-pci
+install pcmcia:m000Bc7300f*fn*pfn*pa*pb*pc*pd* /sbin/modprobe hostap-cs
+install pcmcia:m0138c0002f*fn*pfn*pa*pb*pc*pd* /sbin/modprobe hostap-cs
+install pcmcia:m0156c0002f*fn*pfn*pa*pb*pc*pd* /sbin/modprobe hostap-cs
+install pcmcia:m0274c1613f*fn*pfn*pa*pb*pc*pd* /sbin/modprobe hostap-cs
+install pcmcia:m028Ac0002f*fn*pfn*pa*pb*pc*pd* /sbin/modprobe hostap-cs
+install pcmcia:m02AAc0002f*fn*pfn*pa*pb*pc*pd* /sbin/modprobe hostap-cs
+install pcmcia:m50C2c7300f*fn*pfn*pa*pb*pc*pd* /sbin/modprobe hostap-cs
+install pcmcia:m*c*f*fn*pfn*pa11D901AFpb6E9BD926pc4B74BAA0pd* /sbin/modprobe hostap-cs
+install pcmcia:m*c*f*fn*pfn*pa74C5E40DpbDB472A18pc*pd* /sbin/modprobe hostap-cs
+install pcmcia:mD601c0002f*fn*pfn*pa*pb*pc*pd* /sbin/modprobe hostap-cs
+install pcmcia:mD601c0005f*fn*pfn*pa*pb*pc*pd* /sbin/modprobe hostap-cs
+EOF
+update-modules -f
