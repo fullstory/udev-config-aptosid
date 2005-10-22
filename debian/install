@@ -1,2 +1,3 @@
 kanotix		etc/modprobe.d/
+elsa.rules	/etc/udev/
 fix-udev-lan	usr/sbin/
