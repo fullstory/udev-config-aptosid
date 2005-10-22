@@ -2,7 +2,8 @@
 LOADED=$(lsmod|awk '{print $1}'|sed 's/_/-/g'|sort|uniq)
 ACPI=$(ls /lib/modules/$(uname -r)/kernel/drivers/acpi/|sed 's/\.ko//'|sed 's/_/-/g')
 CPUFREQ=$(ls /lib/modules/$(uname -r)/kernel/arch/*/kernel/cpu/cpufreq/|sed 's/\.ko//'|sed 's/_/-/g')
-EXTRA="capability dazuko fuse pcspkr ppa ppdev tun ndiswrapper"
+EXTRA="capability dazuko epsa2 epst fuse ndiswrapper onscsi pcspkr ppa ppdev sparcsi t348 t358 tun vpi0"
+echo $LOADED|grep -q 8250-pnp||EXTRA="8250 $EXTRA"
 LOADED_ACPI=$(echo $LOADED $ACPI|tr ' ' '\n'|sort|uniq -d)
 LOADED_CPUFREQ=$(echo $LOADED $CPUFREQ|tr ' ' '\n'|sort|uniq -d)
 LOADED_EXTRA=$(echo $LOADED $EXTRA|tr ' ' '\n'|sort|uniq -d)
@@ -28,7 +29,7 @@ EOF
 [ "$LOADED_EXTRA" ] && cat >> /etc/modules <<EOF
 $LOADED_EXTRA
 EOF
-cat > /etc/modprobe.d/kanotix <<EOF
+cat > /etc/modprobe.d/kanotix <<EOF 
 install pci:v00001260d00003873sv00001186sd00003700bc02sc80i00 /sbin/modprobe hostap-pci
 install pci:v00001260d00003890sv00001113sd0000EE03bc02sc80i00 /sbin/modprobe ndiswrapper
 install pci:v00001244d00000A00sv*sd*bc*sc*i* /bin/true
