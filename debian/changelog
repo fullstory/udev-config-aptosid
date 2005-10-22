@@ -1,8 +1,8 @@
-kanotix-udev-config (0.2.6) UNRELEASED; urgency=low
+kanotix-udev-config (0.2.6) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * new upstream revision.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 22 Oct 2005 02:40:10 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 23 Oct 2005 00:12:48 +0200
 
 kanotix-udev-config (0.2.5) unstable; urgency=low
 
