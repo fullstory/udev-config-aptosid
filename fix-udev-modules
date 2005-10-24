@@ -48,5 +48,7 @@ install pcmcia:m*c*f*fn*pfn*pa11D901AFpb6E9BD926pc4B74BAA0pd* /sbin/modprobe hos
 install pcmcia:m*c*f*fn*pfn*pa74C5E40DpbDB472A18pc*pd* /sbin/modprobe hostap-cs
 install pcmcia:mD601c0002f*fn*pfn*pa*pb*pc*pd* /sbin/modprobe hostap-cs
 install pcmcia:mD601c0005f*fn*pfn*pa*pb*pc*pd* /sbin/modprobe hostap-cs
+install pcmcia:m*c*f*fn*pfn*pa95D42008pbADC9D4BBpc*pd* /sbin/modprobe fcpcmcia_cs
+install pcmcia:m*c*f*fn*pfn*pa8D9761C8pb01C5AA7Bpc*pd* /sbin/modprobe fcpcmcia_cs
 EOF
 update-modules -f
