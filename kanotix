@@ -2,6 +2,7 @@ install pci:v00001260d00003873sv00001186sd00003700bc02sc80i00 /sbin/modprobe hos
 install pci:v00001260d00003890sv00001113sd0000EE03bc02sc80i00 /sbin/modprobe ndiswrapper
 install pci:v00001244d00000A00sv*sd*bc*sc*i* /bin/true
 install pci:v00001244d00000E00sv*sd*bc*sc*i* /bin/true
+install pci:v0000109Ed00000878sv000011BDsd0000001Cbc*sc*i* /sbin/modprobe dvb-bt8xx
 install pci:v00001260d00003872sv*sd*bc*sc*i* /sbin/modprobe hostap-pci
 install pci:v00001260d00003873sv*sd*bc*sc*i* /sbin/modprobe hostap-pci
 install pci:v0000167Dd0000A000sv*sd*bc*sc*i* /sbin/modprobe hostap-pci
