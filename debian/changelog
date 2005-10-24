@@ -1,3 +1,9 @@
+kanotix-udev-config (0.2.9) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 24 Oct 2005 23:42:57 +0200
+
 kanotix-udev-config (0.2.8) unstable; urgency=low
 
   * add pctv hack.
