@@ -1,3 +1,9 @@
+kanotix-udev-config (0.2.11) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 20 Nov 2005 02:41:13 +0100
+
 kanotix-udev-config (0.2.10) unstable; urgency=low
 
   * update udev rules.
