@@ -11,6 +11,7 @@ echo Loaded ACPI: $LOADED_ACPI
 echo Loaded CpuFreq: $LOADED_CPUFREQ
 echo Loaded Extra: $LOADED_EXTRA
 mkdir -p /etc/default
+rm -f /etc/default/acpid
 [ "$LOADED_ACPI" ] && cat > /etc/default/acpid <<EOF
 # Specify options for acpid startup, Debian default is to enable the
 # use of sockets at a non-default position
@@ -29,13 +30,12 @@ EOF
 [ "$LOADED_EXTRA" ] && cat >> /etc/modules <<EOF
 $LOADED_EXTRA
 EOF
-cat > /etc/modprobe.d/kanotix <<EOF 
-install pci:v00001260d00003873sv00001186sd00003700bc02sc80i00 /sbin/modprobe hostap-pci
-install pci:v00001260d00003890sv00001113sd0000EE03bc02sc80i00 /sbin/modprobe ndiswrapper
-install pci:v00001244d00000A00sv*sd*bc*sc*i* /bin/true
-install pci:v00001244d00000E00sv*sd*bc*sc*i* /bin/true
+rm -f /etc/modprobe.d/kanotix
+cat > /etc/modprobe.d/kanotix <<EOF
 install pci:v0000109Ed00000878sv000011BDsd0000001Cbc*sc*i* /sbin/modprobe dvb-bt8xx
 install pci:v0000109Ed0000036Esv00001822sd00000001bc*sc*i* /sbin/modprobe dvb-bt8xx
+install pci:v00001260d00003890sv00001113sd0000EE03bc02sc80i00 /sbin/modprobe ndiswrapper
+install pci:v00001260d00003873sv00001186sd00003700bc02sc80i00 /sbin/modprobe hostap-pci
 install pci:v00001260d00003872sv*sd*bc*sc*i* /sbin/modprobe hostap-pci
 install pci:v00001260d00003873sv*sd*bc*sc*i* /sbin/modprobe hostap-pci
 install pci:v0000167Dd0000A000sv*sd*bc*sc*i* /sbin/modprobe hostap-pci
@@ -50,6 +50,8 @@ install pcmcia:m*c*f*fn*pfn*pa11D901AFpb6E9BD926pc4B74BAA0pd* /sbin/modprobe hos
 install pcmcia:m*c*f*fn*pfn*pa74C5E40DpbDB472A18pc*pd* /sbin/modprobe hostap-cs
 install pcmcia:mD601c0002f*fn*pfn*pa*pb*pc*pd* /sbin/modprobe hostap-cs
 install pcmcia:mD601c0005f*fn*pfn*pa*pb*pc*pd* /sbin/modprobe hostap-cs
+install pci:v00001244d00000A00sv*sd*bc*sc*i* /sbin/modprobe fcpci
+install pci:v00001244d00000E00sv*sd*bc*sc*i* /sbin/modprobe fcpci
 install pcmcia:m*c*f*fn*pfn*pa95D42008pbADC9D4BBpc*pd* /sbin/modprobe fcpcmcia_cs
 install pcmcia:m*c*f*fn*pfn*pa8D9761C8pb01C5AA7Bpc*pd* /sbin/modprobe fcpcmcia_cs
 EOF

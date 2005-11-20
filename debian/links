@@ -1,1 +1,2 @@
-/etc/udev/elsa.rules	/etc/udev/rules.d/z80_elsa.rules
+/etc/udev/elsa.rules		/etc/udev/rules.d/z80_elsa.rules
+/etc/udev/bluetooth.rules	/etc/udev/rules.d/bluetooth.rules

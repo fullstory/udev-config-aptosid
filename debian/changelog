@@ -1,8 +1,9 @@
-kanotix-udev-config (0.2.10) UNRELEASED; urgency=low
+kanotix-udev-config (0.2.10) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * update udev rules.
+  * add bluetooth support.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 28 Oct 2005 01:03:28 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 20 Nov 2005 02:35:15 +0100
 
 kanotix-udev-config (0.2.9) unstable; urgency=low
 

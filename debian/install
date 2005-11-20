@@ -1,4 +1,4 @@
 kanotix			etc/modprobe.d/
-elsa.rules		etc/udev/
+*.rules			etc/udev/
 fix-udev-lan		usr/sbin/
 fix-udev-modules	usr/sbin/

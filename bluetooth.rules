@@ -1,0 +1,1 @@
+ACTION=="add", KERNEL=="bluetooth", RUN+="/bin/sh -c '[ -x /etc/init.d/bluez-utils ] && /etc/init.d/bluez-utils restart >/dev/null'"
