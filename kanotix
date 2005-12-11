@@ -20,3 +20,4 @@ install pci:v00001244d00000A00sv*sd*bc*sc*i* /sbin/modprobe fcpci
 install pci:v00001244d00000E00sv*sd*bc*sc*i* /sbin/modprobe fcpci
 install pcmcia:m*c*f*fn*pfn*pa95D42008pbADC9D4BBpc*pd* /sbin/modprobe fcpcmcia_cs
 install pcmcia:m*c*f*fn*pfn*pa8D9761C8pb01C5AA7Bpc*pd* /sbin/modprobe fcpcmcia_cs
+install usb:v041Ep3020d*dc*dsc*dp*ic*isc*ip* /sbin/modprobe snd-usb-audio

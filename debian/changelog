@@ -1,8 +1,8 @@
-kanotix-udev-config (0.2.11) UNRELEASED; urgency=low
+kanotix-udev-config (0.2.11) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * add snd-usb-audio override.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 20 Nov 2005 02:41:13 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 11 Dec 2005 00:56:37 +0100
 
 kanotix-udev-config (0.2.10) unstable; urgency=low
 
