@@ -1,8 +1,10 @@
-kanotix-udev-config (0.2.12) UNRELEASED; urgency=low
+kanotix-udev-config (0.2.12) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * fallback to pure udev, if wireless-tools isn't patched.
+  * remove cdbs auto-update feature.
+  * clean up packaging.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 11 Dec 2005 01:17:19 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 17 Dec 2005 17:54:58 +0100
 
 kanotix-udev-config (0.2.11) unstable; urgency=low
 
