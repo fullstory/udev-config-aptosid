@@ -1,3 +1,9 @@
+kanotix-udev-config (0.2.13) unstable; urgency=low
+
+  * fix clean up rules for non ifrename case.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 22 Dec 2005 01:57:40 +0100
+
 kanotix-udev-config (0.2.12) unstable; urgency=low
 
   * fallback to pure udev, if wireless-tools isn't patched.

@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# check if wireless-tools/ ifrename is patched to wait until devices are up
 if grep -q 'Waiting up to ${seconds} s until lan device(s) are up for renaming...' /etc/init.d/ifrename ; then
 	LAN=$(tail +3 /proc/net/dev|awk -F: '{print $1}'|sed "s/\s*//"|grep -v -e ^lo -e ^vmnet|sort)
 	WLAN=$(tail +3 /proc/net/wireless|awk -F: '{print $1}'|sort)
@@ -8,7 +9,7 @@ if grep -q 'Waiting up to ${seconds} s until lan device(s) are up for renaming..
 		change=change$RANDOM
 		lancount=0
 		wirelesscount=0
-		rm -f /etc/iftab
+		rm -f /etc/iftab /etc/udev/networkfix.rules /etc/udev/rules.d/010_networkfix.rules
 
 		LC_ALL= LANG= ifconfig -a|grep Ethernet|awk '/HWaddr/{print $1" "$5}'|grep -v 00:00:00:00:00:00|while read dev mac; do
 			driver=$(ethtool -i $dev 2>/dev/null|awk '/^driver:/{print $2}')
@@ -34,14 +35,14 @@ if grep -q 'Waiting up to ${seconds} s until lan device(s) are up for renaming..
 			
 				for f in /etc/network/interfaces /etc/ppp/ppp_on_boot /etc/ppp/peers/*; do
 					if grep -qs $dev $f; then
-						perl -pi -e "s|$dev|$change|g" "$f"
-						perl -pi -e "s|$devnew|$dev|g" "$f"
+						perl -pi -e "s|$dev|$change|g"    "$f"
+						perl -pi -e "s|$devnew|$dev|g"    "$f"
 						perl -pi -e "s|$change|$devnew|g" "$f"
 					fi
 				done
 			
-				mv -f /etc/network/wep.$dev /etc/network/wep.$change 2>/dev/null
-				mv -f /etc/network/wep.$devnew /etc/network/wep.$dev 2>/dev/null
+				mv -f /etc/network/wep.$dev    /etc/network/wep.$change 2>/dev/null
+				mv -f /etc/network/wep.$devnew /etc/network/wep.$dev    2>/dev/null
 				mv -f /etc/network/wep.$change /etc/network/wep.$devnew 2>/dev/null
 			fi
 		done > /etc/iftab
@@ -51,8 +52,8 @@ if grep -q 'Waiting up to ${seconds} s until lan device(s) are up for renaming..
 			if [ "$(ethtool -i $dev 2>/dev/null|awk '/^bus-info:/{print $2}')" == "ieee1394" ]; then
 				devnew=firewire$firewirecount
 				echo $devnew driver $(ethtool -i $dev 2>/dev/null|awk '/^driver:/{print $2}')
-				perl -pi -e "s|$dev|$change|g" /etc/network/interfaces
-				perl -pi -e "s|$devnew|$dev|g" /etc/network/interfaces
+				perl -pi -e "s|$dev|$change|g"    /etc/network/interfaces
+				perl -pi -e "s|$devnew|$dev|g"    /etc/network/interfaces
 				perl -pi -e "s|$change|$devnew|g" /etc/network/interfaces
 				((firewirecount++))
 			fi
@@ -64,10 +65,11 @@ if grep -q 'Waiting up to ${seconds} s until lan device(s) are up for renaming..
 		[ -x /usr/sbin/freeze-rc.d ] && /usr/sbin/freeze-rc.d
 	fi
 else
-	rm -f /etc/udev/networkfix.rules 
+	# fallback if ifrename isn't available
+	rm -f /etc/udev/networkfix.rules /etc/udev/rules.d/010_networkfix.rules
 	for i in $(ls -1 /sys/class/net/ | grep -vE '^sit[0-9].*|^lo|^ppp[0-9].*'); do
 		echo KERNEL=\"\*\", $(udevinfo -a -p /sys/class/net/$i | awk '/SYSFS{address}/'), NAME=\"$i\" >> /etc/udev/networkfix.rules
 	done
-	cd /etc/udev/rules.d/ && ln -s ../networkfix.rules 010_networkfix.rules
+	ln -s ../networkfix.rules /etc/udev/rules.d/010_networkfix.rules
 fi
 
