@@ -1,8 +1,9 @@
-kanotix-udev-config (0.2.14) UNRELEASED; urgency=low
+kanotix-udev-config (0.2.14) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * use udev only if ifrename isn't installed for the time being.
+  * deactivate ifrename, if udev is used (dead code for now).
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 22 Dec 2005 02:10:51 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 22 Dec 2005 02:50:48 +0100
 
 kanotix-udev-config (0.2.13) unstable; urgency=low
 
