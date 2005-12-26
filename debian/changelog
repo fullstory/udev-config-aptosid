@@ -1,8 +1,9 @@
-kanotix-udev-config (0.2.15) UNRELEASED; urgency=low
+kanotix-udev-config (0.2.15) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * rename elsa.rules to ttyACM.rules.
+  * add hisax hack.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 22 Dec 2005 02:53:51 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 27 Dec 2005 00:15:53 +0100
 
 kanotix-udev-config (0.2.14) unstable; urgency=low
 

@@ -1,4 +1,8 @@
 #! /bin/sh
+
+rm -f	/etc/udev/elsa.rules \
+	/etc/udev/rules.d/z80_elsa.rules
+
 case "$1" in
 	purge)
 		rm -f	/etc/udev/networkfix.rules \
