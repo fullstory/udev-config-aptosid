@@ -1,8 +1,8 @@
-kanotix-udev-config (0.2.16) UNRELEASED; urgency=low
+kanotix-udev-config (0.2.16) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * fix powernow for amd64 CPUs.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 27 Dec 2005 00:20:42 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 27 Dec 2005 10:54:11 +0100
 
 kanotix-udev-config (0.2.15) unstable; urgency=low
 
