@@ -1,8 +1,8 @@
-kanotix-udev-config (0.2.17) UNRELEASED; urgency=low
+kanotix-udev-config (0.2.17) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * add dmfe overrides.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 27 Dec 2005 10:55:21 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 28 Dec 2005 02:39:09 +0100
 
 kanotix-udev-config (0.2.16) unstable; urgency=low
 

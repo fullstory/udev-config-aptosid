@@ -39,6 +39,8 @@ install pci:v00001260d00003873sv00001186sd00003700bc02sc80i00 /sbin/modprobe hos
 install pci:v00001260d00003872sv*sd*bc*sc*i* /sbin/modprobe hostap-pci
 install pci:v00001260d00003873sv*sd*bc*sc*i* /sbin/modprobe hostap-pci
 install pci:v0000167Dd0000A000sv*sd*bc*sc*i* /sbin/modprobe hostap-pci
+install pci:v00001282d00009100sv*sd*bc*sc*i* /sbin/modprobe dmfe
+install pci:v00001282d00009102sv*sd*bc*sc*i* /sbin/modprobe dmfe
 install pcmcia:m000Bc7300f*fn*pfn*pa*pb*pc*pd* /sbin/modprobe hostap-cs
 install pcmcia:m0138c0002f*fn*pfn*pa*pb*pc*pd* /sbin/modprobe hostap-cs
 install pcmcia:m0156c0002f*fn*pfn*pa*pb*pc*pd* /sbin/modprobe hostap-cs
