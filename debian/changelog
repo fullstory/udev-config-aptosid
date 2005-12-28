@@ -1,8 +1,8 @@
-kanotix-udev-config (0.2.18) UNRELEASED; urgency=low
+kanotix-udev-config (0.2.18) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * add another dvb-8xx override.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 28 Dec 2005 02:40:30 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 28 Dec 2005 22:38:54 +0100
 
 kanotix-udev-config (0.2.17) unstable; urgency=low
 
