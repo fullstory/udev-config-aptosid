@@ -1,8 +1,8 @@
-kanotix-udev-config (0.2.19) UNRELEASED; urgency=low
+kanotix-udev-config (0.2.19) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * gerneralize hostap/ ndiswrapper overrides.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 28 Dec 2005 22:40:15 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 30 Dec 2005 13:55:15 +0100
 
 kanotix-udev-config (0.2.18) unstable; urgency=low
 
