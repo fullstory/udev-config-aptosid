@@ -1,8 +1,8 @@
-kanotix-udev-config (0.2.20) UNRELEASED; urgency=low
+kanotix-udev-config (0.2.20) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * add ndiswrapper override.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 30 Dec 2005 13:56:23 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  2 Mar 2006 01:32:11 +0100
 
 kanotix-udev-config (0.2.19) unstable; urgency=low
 
