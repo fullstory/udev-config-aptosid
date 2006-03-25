@@ -1,8 +1,8 @@
-kanotix-udev-config (0.2.21) UNRELEASED; urgency=low
+kanotix-udev-config (0.2.21) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * /etc/init.d/bluetooth replaces /etc/init.d/bluetooth.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  2 Mar 2006 01:33:59 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 26 Mar 2006 00:38:06 +0100
 
 kanotix-udev-config (0.2.20) unstable; urgency=low
 
