@@ -1,3 +1,9 @@
+kanotix-udev-config (0.2.23) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 25 Apr 2006 02:51:58 +0200
+
 kanotix-udev-config (0.2.22) unstable; urgency=low
 
   * fix udev syntax for ttyACM, thanks to Marco d'Itri.
