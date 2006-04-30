@@ -1,8 +1,10 @@
-kanotix-udev-config (0.2.23) UNRELEASED; urgency=low
+kanotix-udev-config (0.2.23) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * udev can stabilize interfaces on its own since 0.090-1, but the syntax
+    changed with 0.090-2 and some race conditions were fixed in 0.091-1, so
+    lets depend on this one instead.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 25 Apr 2006 02:51:58 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon,  1 May 2006 00:38:34 +0200
 
 kanotix-udev-config (0.2.22) unstable; urgency=low
 
