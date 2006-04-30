@@ -14,7 +14,7 @@
 		LC_ALL= LC_CTYPE= LC_MESSAGES= LANG= ifconfig -a|grep Ethernet|awk '/HWaddr/{print $1" "$5}'|grep -v 00:00:00:00:00:00|while read dev mac; do
 			driver=$(ethtool -i $dev 2>/dev/null|awk '/^driver:/{print $2}')
 		
-			if [ "$driver" != "hostap" -a "$driver" != "ath_pci" -a "${dev/vmnet*}" -a "${dev/ath*}" ]; then
+			if [ "$driver" != "hostap" -a "$driver" != "ath_pci" -a "$driver" != "ndiswrapper" -a "${dev/vmnet*}" -a "${dev/ath*}" ]; then
 				iswlan=$(echo $dev $WLAN|tr ' ' '\n'|sort|uniq -d)
 			
 				if [ "$iswlan" ]; then
