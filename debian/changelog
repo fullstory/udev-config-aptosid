@@ -1,8 +1,9 @@
-kanotix-udev-config (0.2.24) UNRELEASED; urgency=low
+kanotix-udev-config (0.2.24) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * blacklis cx88_alsa.
+  * add override for r8169.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon,  1 May 2006 00:44:36 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 29 Aug 2006 13:45:36 +0200
 
 kanotix-udev-config (0.2.23) unstable; urgency=low
 

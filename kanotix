@@ -1,3 +1,4 @@
+blacklist cx88_alsa
 install pci:v0000109Ed00000878sv000011BDsd0000001Cbc*sc*i* /sbin/modprobe dvb-bt8xx
 install pci:v0000109Ed0000036Esv00001461sd00000771bc*sc*i* /sbin/modprobe dvb-bt8xx
 install pci:v0000109Ed0000036Esv00001822sd00000001bc*sc*i* /sbin/modprobe dvb-bt8xx
@@ -9,6 +10,7 @@ install pci:v00001260d00003873sv*sd*bc*sc*i* /sbin/modprobe hostap-pci
 install pci:v0000167Dd0000A000sv*sd*bc*sc*i* /sbin/modprobe hostap-pci
 install pci:v00001282d00009100sv*sd*bc*sc*i* /sbin/modprobe dmfe
 install pci:v00001282d00009102sv*sd*bc*sc*i* /sbin/modprobe dmfe
+install pci:v000010ECd00008169sv*sd*bc*sc*i* /sbin/modprobe r8169
 install pcmcia:m000Bc7300f*fn*pfn*pa*pb*pc*pd* /sbin/modprobe hostap-cs
 install pcmcia:m0138c0002f*fn*pfn*pa*pb*pc*pd* /sbin/modprobe hostap-cs
 install pcmcia:m0156c0002f*fn*pfn*pa*pb*pc*pd* /sbin/modprobe hostap-cs
