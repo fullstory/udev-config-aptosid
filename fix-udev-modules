@@ -30,8 +30,8 @@ EOF
 [ "$LOADED_EXTRA" ] && cat >> /etc/modules <<EOF
 $LOADED_EXTRA
 EOF
-rm -f /etc/modprobe.d/kanotix
-cat > /etc/modprobe.d/kanotix <<EOF
+rm -f /etc/modprobe.d/sidux
+cat > /etc/modprobe.d/sidux <<EOF
 blacklist cx88_alsa
 install pci:v0000109Ed00000878sv000011BDsd0000001Cbc*sc*i* /sbin/modprobe dvb-bt8xx
 install pci:v0000109Ed0000036Esv00001461sd00000771bc*sc*i* /sbin/modprobe dvb-bt8xx

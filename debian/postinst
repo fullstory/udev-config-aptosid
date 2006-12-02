@@ -1,7 +1,8 @@
 #! /bin/sh
 
 rm -f	/etc/udev/elsa.rules \
-	/etc/udev/rules.d/z80_elsa.rules
+	/etc/udev/rules.d/z80_elsa.rules \
+    /etc/modprobe.d/kanotix
 
 case "$1" in
 	purge)
