@@ -1,12 +1,13 @@
-udev-config-sidux (0.2.25) UNRELEASED; urgency=low
+udev-config-sidux (0.2.25) unstable; urgency=low
 
-  * NOT RELEASED YET
-
+  [ Joaquim Boura ]
   * Initial version for sidux
-
   * switch to utf-8.
 
- -- Joaquim Boura <x-un-i@sidux.com>  Sat,  2 Dec 2006 13:54:44 +0100
+  [ Stefan Lippers-Hollmann ]
+  * tweak debian/control.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun,  3 Dec 2006 02:42:33 +0100
 
 kanotix-udev-config (0.2.24) unstable; urgency=low
 
