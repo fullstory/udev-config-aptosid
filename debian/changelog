@@ -2,7 +2,9 @@ udev-config-sidux (0.2.26) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun,  3 Dec 2006 02:44:57 +0100
+  * fixed mispelling
+
+ -- Joaquim Boura <x-un-i@sidux.com>  Mon,  4 Dec 2006 15:09:20 +0100
 
 udev-config-sidux (0.2.25) unstable; urgency=low
 
