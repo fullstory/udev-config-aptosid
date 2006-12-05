@@ -1,6 +1,4 @@
-udev-config-sidux (0.2.26) UNRELEASED; urgency=low
-
-  * NOT RELEASED YET
+udev-config-sidux (0.2.26) unstable; urgency=low
 
   * fixed mispelling
 
