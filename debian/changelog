@@ -1,8 +1,9 @@
-udev-config-sidux (0.2.27) UNRELEASED; urgency=low
+udev-config-sidux (0.2.27) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * kanotix-udev-config was never part of sidux or debian, don't conflict with
+    it.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue,  5 Dec 2006 14:53:34 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  1 Mar 2007 19:39:10 +0100
 
 udev-config-sidux (0.2.26) unstable; urgency=low
 
