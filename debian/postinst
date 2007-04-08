@@ -1,6 +1,6 @@
 #! /bin/sh
 
-rm -r	/etc/modprobe.d/kanotix
+rm -f	/etc/modprobe.d/kanotix
 	/etc/udev/bluetooth.rules \
 	/etc/udev/elsa.rules \
 	/etc/udev/networkfix.rules \

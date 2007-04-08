@@ -1,8 +1,8 @@
-udev-config-sidux (0.3.1) UNRELEASED; urgency=low
+udev-config-sidux (0.3.1) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * brown paper bag release, fix parameters for rm, d'oh.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 09 Apr 2007 00:46:19 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 09 Apr 2007 01:54:57 +0200
 
 udev-config-sidux (0.3.0) unstable; urgency=low
 
