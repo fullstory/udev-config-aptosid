@@ -1,2 +1,13 @@
+# Microlink 56k USB
+KERNEL=="ttyACM[0-9]", MODE="0660", GROUP="dialout"
+
+# stable device for cx88 IR _Hauppauge Nova-S-Plus
+KERNEL=="event*", ATTRS{name}=="cx88 IR*", NAME="input/%k", SYMLINK="input/irremote"
+
+# ISDN
 KERNEL=="hisax", PROGRAM="/bin/sh -c '/bin/mknod /dev/isdnctrl0 -m 666 c 45 64 2>/dev/null;/bin/ln -s /dev/isdnctrl0 /dev/isdnctrl;/bin/mknod /dev/isdninfo -m 444 c 45 255 2>/dev/null'"
 KERNEL=="hisax", PROGRAM="/bin/sh -c '/bin/mknod /dev/ippp0 -m 666 c 45 128 2>/dev/null;/bin/mknod /dev/ippp1 -m 666 c 45 129 2>/dev/null;/bin/mknod /dev/ippp2 -m 666 c 45 130 2>/dev/null'"
+
+# Bluetooth
+ACTION=="add", KERNEL=="bluetooth", RUN+="/bin/sh -c '[ -x /etc/init.d/bluetooth ] && /etc/init.d/bluetooth restart >/dev/null'"
+

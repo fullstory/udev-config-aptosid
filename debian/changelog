@@ -1,8 +1,10 @@
-udev-config-sidux (0.2.28) UNRELEASED; urgency=low
+udev-config-sidux (0.3.0) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * completely overhaul packaging.
+  * update debian/copyright.
+  * fix-udev-modules is obsolete.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  1 Mar 2007 19:40:51 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 09 Apr 2007 00:34:55 +0200
 
 udev-config-sidux (0.2.27) unstable; urgency=low
 

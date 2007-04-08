@@ -1,4 +1,2 @@
 sidux			etc/modprobe.d/
-*.rules			etc/udev/
 fix-udev-lan		usr/sbin/
-fix-udev-modules	usr/sbin/

@@ -1,7 +1,10 @@
-blacklist cx88_alsa
 install pci:v0000109Ed00000878sv000011BDsd0000001Cbc*sc*i* /sbin/modprobe dvb-bt8xx
 install pci:v0000109Ed0000036Esv00001461sd00000771bc*sc*i* /sbin/modprobe dvb-bt8xx
 install pci:v0000109Ed0000036Esv00001822sd00000001bc*sc*i* /sbin/modprobe dvb-bt8xx
+# this cheats a bit, cx88-alsa creates a race condistion and shouldn't be 
+# autoloaded, since 2.6.20 cx88-dvb isn't loaded anymore, now cheat around it
+# by abusing the audio device for loading the frontend driver.
+install pci:v000014F1d00008801sv*sd*bc*sc*i* /sbin/modprobe cx88-dvb
 install pci:v00001260d00003890sv00001113sd00008301bc*sc*i* /sbin/modprobe ndiswrapper
 install pci:v00001260d00003890sv00001113sd0000EE03bc*sc*i* /sbin/modprobe ndiswrapper
 install pci:v00001260d00003873sv00001186sd00003700bc*sc*i* /sbin/modprobe hostap-pci
