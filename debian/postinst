@@ -1,15 +1,15 @@
 #! /bin/sh
 
-rm -f	/etc/modprobe.d/kanotix \
-	/etc/udev/bluetooth.rules \
-	/etc/udev/elsa.rules \
-	/etc/udev/networkfix.rules \
-	/etc/udev/ttyACM.rules \
-	/etc/udev/hisax.rules \
-	/etc/udev/rules.d/010_networkfix.rules
-	/etc/udev/rules.d/bluetooth.rules \
-	/etc/udev/rules.d/hisax.rules \
-	/etc/udev/rules.d/z80_elsa.rules \
+rm -f	/etc/modprobe.d/kanotix			\
+	/etc/udev/bluetooth.rules		\
+	/etc/udev/elsa.rules			\
+	/etc/udev/networkfix.rules		\
+	/etc/udev/ttyACM.rules			\
+	/etc/udev/hisax.rules			\
+	/etc/udev/rules.d/010_networkfix.rules	\
+	/etc/udev/rules.d/bluetooth.rules	\
+	/etc/udev/rules.d/hisax.rules		\
+	/etc/udev/rules.d/z80_elsa.rules	\
 	/etc/udev/rules.d/z80_ttyACM.rules
 
 # dh_installdeb will replace this with shell code automatically
