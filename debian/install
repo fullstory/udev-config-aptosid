@@ -1,2 +1,3 @@
 sidux			etc/modprobe.d/
+mac80211		etc/modprobe.d/
 fix-udev-lan		usr/sbin/

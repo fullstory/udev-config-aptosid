@@ -1,0 +1,8 @@
+blacklist rt2400pci.ko
+blacklist rt2500pci.ko
+blacklist rt2500usb.ko
+blacklist rt2x00lib.ko
+blacklist rt2x00pci.ko
+blacklist rt2x00usb.ko
+blacklist rt61pci.ko
+blacklist rt73usb.ko
