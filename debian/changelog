@@ -1,8 +1,9 @@
-udev-config-sidux (0.3.6) UNRELEASED; urgency=low
+udev-config-sidux (0.3.6) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * remove obsolete modprobe overrides.
+  * take care of ODD rules in fix-udev-lan as well.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 22 May 2007 18:50:36 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 11 Jul 2007 18:37:22 +0200
 
 udev-config-sidux (0.3.5) unstable; urgency=low
 
