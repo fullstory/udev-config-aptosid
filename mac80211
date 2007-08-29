@@ -1,3 +1,49 @@
+### /etc/modprobe.d/mac80211 - blacklist alternative driver variants for sidux
+## lists wlan drivers for which mature and new mac80211 based drivers exist.
+## comment out the preferred driver variants.
+## uncomment the blacklist entries for unwanted variants
+
+### Atheros wlan cards
+## ath5k (mac80211)
+blacklist ath5k
+## madwifi (non-free) - blacklist or don't install the external module
+#blacklist ath_hal
+#blacklist ath_pci
+#blacklist ath_rate_amrr
+#blacklist ath_rate_onoe
+#blacklist ath_rate_sample
+#blacklist wlan
+#blacklist wlan_acl
+#blacklist wlan_ccmp
+#blacklist wlan_scan_ap
+#blacklist wlan_scan_sta
+#blacklist wlan_tkip
+#blacklist wlan_wep
+#blacklist wlan_xauth
+
+### Broadcom wlan cards
+## b43/ b43legacy (mac80211)
+blacklist b43
+blacklist b43legacy
+## bcm43xx (ieee80211softmac)
+#blacklist bcm43xx
+
+### Intel IPW3945abg wlan cards
+## iwlwifi (mac80211)
+blacklist iwl3945
+## ipw3945 (ieee80211) - blacklist or don't install the external module
+#blacklist ipw3945
+
+### Intersil PRISM54 wlan cards
+## p54 (mac80211)
+blacklist p54common
+blacklist p54pci
+blacklist p54usb
+## prism54 (full-mac)
+#blacklist prism54
+
+### RaLink wlan cards
+## rt2x00 (mac80211)
 blacklist rt2400pci
 blacklist rt2500pci
 blacklist rt2500usb
@@ -6,3 +52,15 @@ blacklist rt2x00pci
 blacklist rt2x00usb
 blacklist rt61pci
 blacklist rt73usb
+## RaLink/ serialmonkey legacy - blacklist or don't install the external module
+#blacklist rt2400
+#blacklist rt2500
+#blacklist rt2570
+#blacklist rt61
+#blacklist rt73
+
+### ZyDAS zd1211 wlan cards
+## zd1211rw-mac80211 (mac80211)
+blacklist zd1211rw-mac80211
+## zd1211rw (ieee80211softmac)
+#blacklist zd1211rw
