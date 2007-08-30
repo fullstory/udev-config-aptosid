@@ -30,9 +30,9 @@ blacklist b43legacy
 
 ### Intel IPW3945abg wlan cards
 ## iwlwifi (mac80211)
-blacklist iwl3945
+#blacklist iwl3945
 ## ipw3945 (ieee80211) - blacklist or don't install the external module
-#blacklist ipw3945
+blacklist ipw3945
 
 ### Intersil PRISM54 wlan cards
 ## p54 (mac80211)

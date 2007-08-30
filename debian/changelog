@@ -1,8 +1,8 @@
-udev-config-sidux (0.4.1) UNRELEASED; urgency=low
+udev-config-sidux (0.4.1) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * blacklist ipw3945, not iwl3945.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 30 Aug 2007 00:29:44 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 30 Aug 2007 02:02:06 +0200
 
 udev-config-sidux (0.4.0) unstable; urgency=low
 
