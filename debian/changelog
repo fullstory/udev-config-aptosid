@@ -1,8 +1,9 @@
 udev-config-sidux (0.4.3) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * update syntax for Vcs headers in debian/control
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 30 Sep 2007 15:44:28 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 07 Oct 2007 14:52:30 +0200
 
 udev-config-sidux (0.4.2) unstable; urgency=low
 
