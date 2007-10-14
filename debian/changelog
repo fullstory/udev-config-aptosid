@@ -1,9 +1,10 @@
-udev-config-sidux (0.4.3) UNRELEASED; urgency=low
+udev-config-sidux (0.4.3) unstable; urgency=low
 
-  * NOT RELEASED YET
-  * update syntax for Vcs headers in debian/control
+  * update syntax for Vcs headers in debian/control.
+  * add comments.
+  * disable old IEEE1394 stack in favour of "Juju".
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 07 Oct 2007 14:52:30 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 14 Oct 2007 13:31:55 +0200
 
 udev-config-sidux (0.4.2) unstable; urgency=low
 

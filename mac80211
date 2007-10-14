@@ -1,5 +1,6 @@
 ### /etc/modprobe.d/mac80211 - blacklist alternative driver variants for sidux
 ## lists wlan drivers for which mature and new mac80211 based drivers exist.
+#
 ## comment out the preferred driver variants.
 ## uncomment the blacklist entries for unwanted variants
 
@@ -65,3 +66,4 @@ blacklist rt73usb
 blacklist zd1211rw-mac80211
 ## zd1211rw (ieee80211softmac)
 #blacklist zd1211rw
+
