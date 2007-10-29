@@ -38,28 +38,28 @@ blacklist ipw3945
 
 ### Intersil PRISM54 wlan cards
 ## p54 (mac80211)
-blacklist p54common
-blacklist p54pci
-blacklist p54usb
+#blacklist p54common
+#blacklist p54pci
+#blacklist p54usb
 ## prism54 (full-mac)
-#blacklist prism54
+blacklist prism54
 
 ### RaLink wlan cards
 ## rt2x00 (mac80211)
-blacklist rt2400pci
-blacklist rt2500pci
-blacklist rt2500usb
-blacklist rt2x00lib
-blacklist rt2x00pci
-blacklist rt2x00usb
-blacklist rt61pci
-blacklist rt73usb
+#blacklist rt2400pci
+#blacklist rt2500pci
+#blacklist rt2500usb
+#blacklist rt2x00lib
+#blacklist rt2x00pci
+#blacklist rt2x00usb
+#blacklist rt61pci
+#blacklist rt73usb
 ## RaLink/ serialmonkey legacy - blacklist or don't install the external module
-#blacklist rt2400
-#blacklist rt2500
-#blacklist rt2570
-#blacklist rt61
-#blacklist rt73
+blacklist rt2400
+blacklist rt2500
+blacklist rt2570
+blacklist rt61
+blacklist rt73
 
 ### ZyDAS zd1211 wlan cards
 ## zd1211rw-mac80211 (mac80211)
