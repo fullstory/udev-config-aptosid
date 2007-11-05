@@ -1,3 +1,9 @@
+udev-config-sidux (0.4.7) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 05 Nov 2007 15:02:14 +0100
+
 udev-config-sidux (0.4.6) unstable; urgency=low
 
   * move all RaLink devices, except rt2570(!), to rt2x00 as suggested by
