@@ -1,8 +1,10 @@
-udev-config-sidux (0.4.7) UNRELEASED; urgency=low
+udev-config-sidux (0.4.7) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * switch to using dh_installmodules.
+  * filter lirc device with ATTRS{name}=="*dvb*|*DVB*|* IR *" and use
+    /dev/input/ir as persistent device.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 05 Nov 2007 15:02:14 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 10 Nov 2007 18:57:14 +0100
 
 udev-config-sidux (0.4.6) unstable; urgency=low
 
