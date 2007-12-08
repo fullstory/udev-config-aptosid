@@ -1,6 +1,5 @@
-udev-config-sidux (0.4.8) UNRELEASED; urgency=low
+udev-config-sidux (0.4.8) unstable; urgency=low
 
-  * NOT RELEASED YET
   * update to Standards-Version 3.7.3, no changes necessary.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 03 Dec 2007 15:06:44 +0100
