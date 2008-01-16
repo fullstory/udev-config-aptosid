@@ -48,7 +48,7 @@ blacklist prism54
 ## rt2x00 (mac80211)
 #blacklist rt2400pci
 #blacklist rt2500pci
-blacklist rt2500usb
+#blacklist rt2500usb
 #blacklist rt2x00lib
 #blacklist rt2x00pci
 #blacklist rt2x00usb
@@ -57,7 +57,7 @@ blacklist rt2500usb
 ## RaLink/ serialmonkey legacy - blacklist or don't install the external module
 blacklist rt2400
 blacklist rt2500
-#blacklist rt2570
+blacklist rt2570
 blacklist rt61
 blacklist rt73
 
