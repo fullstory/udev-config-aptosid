@@ -4,14 +4,6 @@
 ## comment out the preferred driver variants.
 ## uncomment the blacklist entries for unwanted variants
 
-### Broadcom wlan cards
-##### DO NOT BLACKLIST ANY Broadcom card, 2.6.22 needs bcm43xx, 2.6.23 b43/ b43legacy! #####
-## b43/ b43legacy (mac80211)
-#blacklist b43
-#blacklist b43legacy
-## bcm43xx (ieee80211softmac)
-#blacklist bcm43xx
-
 ### Intel IPW3945abg wlan cards
 ## iwlwifi (mac80211)
 #blacklist iwl3945

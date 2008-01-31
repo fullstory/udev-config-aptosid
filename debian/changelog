@@ -2,8 +2,10 @@ udev-config-sidux (0.4.11) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
   * ath5k vs. madwifi are now handled by madwifi-tools.
+  * b43 vs. bcm43xx were never simultaneously in one stable kernel package, no
+    need to list it anymore.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 01 Feb 2008 00:34:03 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 01 Feb 2008 00:34:51 +0100
 
 udev-config-sidux (0.4.10) unstable; urgency=low
 
