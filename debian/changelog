@@ -1,8 +1,9 @@
 udev-config-sidux (0.4.11) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * ath5k vs. madwifi are now handled by madwifi-tools.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 19 Jan 2008 02:51:35 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 01 Feb 2008 00:34:03 +0100
 
 udev-config-sidux (0.4.10) unstable; urgency=low
 

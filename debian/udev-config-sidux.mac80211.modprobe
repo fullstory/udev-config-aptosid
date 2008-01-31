@@ -4,24 +4,6 @@
 ## comment out the preferred driver variants.
 ## uncomment the blacklist entries for unwanted variants
 
-### Atheros wlan cards
-## ath5k (mac80211)
-blacklist ath5k
-## madwifi (non-free) - blacklist or don't install the external module
-#blacklist ath_hal
-#blacklist ath_pci
-#blacklist ath_rate_amrr
-#blacklist ath_rate_onoe
-#blacklist ath_rate_sample
-#blacklist wlan
-#blacklist wlan_acl
-#blacklist wlan_ccmp
-#blacklist wlan_scan_ap
-#blacklist wlan_scan_sta
-#blacklist wlan_tkip
-#blacklist wlan_wep
-#blacklist wlan_xauth
-
 ### Broadcom wlan cards
 ##### DO NOT BLACKLIST ANY Broadcom card, 2.6.22 needs bcm43xx, 2.6.23 b43/ b43legacy! #####
 ## b43/ b43legacy (mac80211)
