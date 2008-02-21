@@ -1,8 +1,8 @@
-udev-config-sidux (0.4.12) UNRELEASED; urgency=low
+udev-config-sidux (0.4.12) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * appease lintian and write (C) as © in debian/copyright.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 01 Feb 2008 00:40:19 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 21 Feb 2008 01:36:03 +0100
 
 udev-config-sidux (0.4.11) unstable; urgency=low
 
