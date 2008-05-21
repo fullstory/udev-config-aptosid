@@ -1,8 +1,8 @@
-udev-config-sidux (0.4.13) UNRELEASED; urgency=low
+udev-config-sidux (0.4.13) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * switch to the new dh implementation of debhelper 7.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 21 Feb 2008 01:37:09 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 21 May 2008 21:41:09 +0200
 
 udev-config-sidux (0.4.12) unstable; urgency=low
 

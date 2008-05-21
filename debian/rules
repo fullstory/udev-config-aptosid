@@ -1,19 +1,11 @@
 #!/usr/bin/make -f
-# Sample debian/rules that uses cdbs.  Originaly written by Robert Millan.
-# This file is public domain.
 
-# Add here any variable or target overrides you need
-include /usr/share/cdbs/1/rules/debhelper.mk
+%:
+	dh $@
 
-install/udev-config-sidux::
-	# disable the old ieee1394 stack in favour of the new "juju" 
-	# firewire stack
+binary:
+	dh $@ --until dh_installmodules
 	dh_installmodules --name=ieee1394
-	
-	# choose between classic softmac wlan modules and their max80211 
-	# successors
 	dh_installmodules --name=mac80211
-	
-	# several hardware related tweaks and detection support
 	dh_installmodules --name=sidux
-
+	dh $@ --remaining
