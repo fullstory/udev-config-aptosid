@@ -1,3 +1,9 @@
+udev-config-sidux (0.5.1) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 16 Sep 2008 23:58:30 +0200
+
 udev-config-sidux (0.5.0) unstable; urgency=low
 
   * remove obsolete udev/ module-init-tools overrides.
