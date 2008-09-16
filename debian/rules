@@ -6,6 +6,5 @@
 binary:
 	dh $@ --until dh_installmodules
 	dh_installmodules --name=ieee1394
-	dh_installmodules --name=mac80211
 	dh_installmodules --name=sidux
 	dh $@ --remaining
