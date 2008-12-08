@@ -1,8 +1,9 @@
 udev-config-sidux (0.5.1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * make lintian happy and depend on ${misc:Depends}.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 16 Sep 2008 23:58:30 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 08 Dec 2008 03:07:06 +0100
 
 udev-config-sidux (0.5.0) unstable; urgency=low
 

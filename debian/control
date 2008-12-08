@@ -9,6 +9,7 @@ Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/udev-config-sidux/trunk/
 
 Package: udev-config-sidux
 Architecture: all
-Depends: udev (>= 0.091-1)
+Depends: ${misc:Depends},
+         udev (>= 0.091-1)
 Description: custom configuration for udev
  Configure PCI IDs and udev events needed by sidux.
