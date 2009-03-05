@@ -1,8 +1,13 @@
-udev-config-sidux (0.5.2) UNRELEASED; urgency=low
+udev-config-sidux (0.5.2) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * rebuild against debhelper 7.2.2 and depend on it, to inherit the new
+    dh_installmodules behaviour of adding a .conf suffix and handling the
+    upgrade from older versions.
+  * document that the old firewire (CONFIG_IEEE1394) stack will not be built 
+    for sidux kernels >= 2.6.29 anymore; libraw1394 is now supposed to be
+    compatible with its successor ("JuJu").
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 09 Dec 2008 00:03:26 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 05 Mar 2009 22:50:46 +0100
 
 udev-config-sidux (0.5.1) unstable; urgency=low
 

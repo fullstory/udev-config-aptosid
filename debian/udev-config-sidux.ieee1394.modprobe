@@ -1,18 +1,8 @@
-### /etc/modprobe.d/ieee1394 - blacklist alternative firewire stack for sidux
-## please read http://wiki.linux1394.org/JujuMigration to decide which 
-## firewire stack to prefer
-#
-## comment out the preferred driver variants.
-## uncomment the blacklist entries for unwanted variants
-
-### new "Juju" FireWire driver stack (CONFIG_FIREWIRE)
-#blacklist firewire-ohci
-#blacklist firewire-sbp2
-
-### old IEEE1394 stack (CONFIG_IEEE1394)
+### blacklist the old IEEE1394 stack (CONFIG_IEEE1394)
+##  prefer the new "JuJu" stack instead; sidux will not ship these modules 
+##  in kernels >=2.6.29.
 blacklist ohci1394
 blacklist sbp2
 blacklist dv1394
 blacklist raw1394
 blacklist video1394
-

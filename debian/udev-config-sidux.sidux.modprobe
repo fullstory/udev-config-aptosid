@@ -13,4 +13,3 @@ install pci:v000014F1d00008801sv*sd*bc*sc*i* /sbin/modprobe cx88-dvb
 
 ## map device IDs to snd-usb-audio
 install usb:v041Ep3020d*dc*dsc*dp*ic*isc*ip* /sbin/modprobe snd-usb-audio
-
