@@ -1,8 +1,8 @@
-udev-config-sidux (0.5.3) UNRELEASED; urgency=low
+udev-config-sidux (0.5.3) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * remove stale mac80211 modprobe information.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 05 Mar 2009 22:53:12 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 27 Mar 2009 01:38:29 +0100
 
 udev-config-sidux (0.5.2) unstable; urgency=low
 

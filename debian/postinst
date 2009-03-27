@@ -1,6 +1,7 @@
 #! /bin/sh
 
 rm -f	/etc/modprobe.d/kanotix			\
+	/etc/modprobe.d/mac80211		\
 	/etc/udev/bluetooth.rules		\
 	/etc/udev/elsa.rules			\
 	/etc/udev/networkfix.rules		\
