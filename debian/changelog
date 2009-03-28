@@ -1,8 +1,9 @@
-udev-config-sidux (0.5.4) UNRELEASED; urgency=low
+udev-config-sidux (0.5.4) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * drop fix-udev-lan, it's no longer required and has been broken for a 
+    long time.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 27 Mar 2009 01:39:39 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 28 Mar 2009 21:07:43 +0100
 
 udev-config-sidux (0.5.3) unstable; urgency=low
 
