@@ -1,8 +1,8 @@
-udev-config-sidux (0.6.1) UNRELEASED; urgency=low
+udev-config-sidux (0.6.1) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * tweak settings for alps and plain synaptics.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 28 May 2009 19:31:16 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 28 May 2009 20:46:52 +0200
 
 udev-config-sidux (0.6.0) unstable; urgency=low
 

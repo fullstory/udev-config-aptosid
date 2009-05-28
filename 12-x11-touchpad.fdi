@@ -13,23 +13,23 @@
 				<merge key="input.x11_options.MaxTapTime" type="string">180</merge>
 				<merge key="input.x11_options.MaxTapMove" type="string">220</merge>
 				<merge key="input.x11_options.VertScrollDelta" type="string">100</merge>
-				<merge key="input.x11_options.MinSpeed" type="string">0.09</merge>
-				<merge key="input.x11_options.MaxSpeed" type="string">0.18</merge>
-				<merge key="input.x11_options.AccelFactor" type="string">0.0015</merge>
+				<merge key="input.x11_options.MinSpeed" type="string">0.2</merge>
+				<merge key="input.x11_options.MaxSpeed" type="string">2.5</merge>
+				<merge key="input.x11_options.AccelFactor" type="string">0.012</merge>
 			</match>
 
 			<match key="input.product" contains="AlpsPS/2">
-				<merge key="input.x11_options.FingerLow" type="string">7</merge>
-				<merge key="input.x11_options.FingerHigh" type="string">8</merge>
-				<merge key="input.x11_options.MaxTapTime" type="string">300</merge>
+				<merge key="input.x11_options.FingerLow" type="string">14</merge>
+				<merge key="input.x11_options.FingerHigh" type="string">15</merge>
+				<merge key="input.x11_options.MaxTapTime" type="string">180</merge>
 				<merge key="input.x11_options.MaxTapMove" type="string">110</merge>
 				<merge key="input.x11_options.VertScrollDelta" type="string">20</merge>
 				<merge key="input.x11_options.HorizScrollDelta" type="string">20</merge>
-				<merge key="input.x11_options.EdgeMotionMinSpeed" type="string">200</merge>
-				<merge key="input.x11_options.EdgeMotionMaxSpeed" type="string">200</merge>
-				<merge key="input.x11_options.MinSpeed" type="string">0.60</merge>
-				<merge key="input.x11_options.MaxSpeed" type="string">1.10</merge>
-				<merge key="input.x11_options.AccelFactor" type="string">0.030</merge>
+				<merge key="input.x11_options.EdgeMotionMinSpeed" type="string">15</merge>
+				<merge key="input.x11_options.EdgeMotionMaxSpeed" type="string">15</merge>
+				<merge key="input.x11_options.MinSpeed" type="string">0.70</merge>
+				<merge key="input.x11_options.MaxSpeed" type="string">3</merge>
+				<merge key="input.x11_options.AccelFactor" type="string">0.025</merge>
 				<merge key="input.x11_options.UpDownScrolling" type="string">1</merge>
 				<merge key="input.x11_options.EmulateMidButtonTime" type="string">75</merge>
 				<merge key="input.x11_options.CircularScrolling" type="string">1</merge>
