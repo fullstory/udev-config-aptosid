@@ -1,8 +1,8 @@
-udev-config-sidux (0.5.6) UNRELEASED; urgency=low
+udev-config-sidux (0.6.0) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * rework touchpad fdi.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 28 May 2009 16:15:43 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 28 May 2009 19:29:05 +0200
 
 udev-config-sidux (0.5.5) unstable; urgency=low
 
