@@ -3,7 +3,7 @@ Section: admin
 Priority: extra
 Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 Build-Depends: debhelper (>= 7.2.2)
-Standards-Version: 3.8.0
+Standards-Version: 3.8.1
 Vcs-Svn: svn://svn.berlios.de/fullstory/udev-config-sidux/trunk
 Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/udev-config-sidux/trunk/
 
@@ -11,5 +11,12 @@ Package: udev-config-sidux
 Architecture: all
 Depends: ${misc:Depends},
          udev (>= 0.091-1)
-Description: custom configuration for udev
- Configure PCI IDs and udev events needed by sidux.
+Recommends: hal
+Description: custom udev/ hal/ dbus configurations for udev
+ Configure PCI IDs, udev events and hal policies needed by sidux.
+ .
+ This also provides hal policies to enable advanced touchpad features for:
+  - synaptics
+  - alps
+  - elantouch
+  - appletouch

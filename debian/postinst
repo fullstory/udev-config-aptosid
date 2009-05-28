@@ -1,4 +1,5 @@
 #! /bin/sh
+set -e
 
 rm -f	/etc/modprobe.d/kanotix			\
 	/etc/modprobe.d/mac80211		\
@@ -19,4 +20,3 @@ rm -f	/etc/modprobe.d/kanotix			\
 #DEBHELPER#
 
 exit 0
-
