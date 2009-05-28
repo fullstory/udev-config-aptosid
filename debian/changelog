@@ -1,3 +1,9 @@
+udev-config-sidux (0.6.3) unstable; urgency=low
+
+  * disable HorizEdgeScroll again, until we decide on a final default.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 28 May 2009 22:32:26 +0200
+
 udev-config-sidux (0.6.2) unstable; urgency=low
 
   * enable HorizEdgeScroll globally, no two finger defaults.
