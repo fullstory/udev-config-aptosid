@@ -1,8 +1,12 @@
 udev-config-sidux (0.6.4) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 28 May 2009 22:34:01 +0200
+  [ Bernard Gray ]
+  * touchpad policy - remove LockedDrag option from ETPS/2
+
+ -- Bernard Gray <bernard.gray@gmail.com>  Fri, 05 Jun 2009 11:16:51 +1000
 
 udev-config-sidux (0.6.3) unstable; urgency=low
 
