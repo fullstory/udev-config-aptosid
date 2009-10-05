@@ -3,14 +3,14 @@ Section: admin
 Priority: extra
 Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 Build-Depends: debhelper (>= 7.2.2)
-Standards-Version: 3.8.1
+Standards-Version: 3.8.3
 Vcs-Svn: svn://svn.berlios.de/fullstory/udev-config-sidux/trunk
 Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/udev-config-sidux/trunk/
 
 Package: udev-config-sidux
 Architecture: all
 Depends: ${misc:Depends},
-         udev (>= 0.091-1)
+ udev (>= 0.091-1)
 Recommends: hal
 Description: custom udev/ hal/ dbus configurations for udev
  Configure PCI IDs, udev events and hal policies needed by sidux.

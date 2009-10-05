@@ -1,8 +1,12 @@
-udev-config-sidux (0.6.5) UNRELEASED; urgency=low
+udev-config-sidux (0.6.5) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * bump standards version to 3.8.3, no changes necessary.
+  * drop ttyACM override, it's no longer necessary.
+  * drop IEEE1394 blacklist, neither Debian nor sidux are shipping the obsolete
+    firewire stack anymore.
+  * drop special snd-usb-audio IDs, no longer necessary.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 05 Jun 2009 03:30:45 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 03 Oct 2009 00:09:06 +0200
 
 udev-config-sidux (0.6.4) unstable; urgency=low
 

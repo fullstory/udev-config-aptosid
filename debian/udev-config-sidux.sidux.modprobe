@@ -10,6 +10,3 @@ install pci:v0000109Ed0000036Esv00001822sd00000001bc*sc*i* /sbin/modprobe dvb-bt
 # autoloaded, since 2.6.20 cx88-dvb isn't loaded anymore, now cheat around it
 # by abusing the audio device for loading the frontend driver.
 install pci:v000014F1d00008801sv*sd*bc*sc*i* /sbin/modprobe cx88-dvb
-
-## map device IDs to snd-usb-audio
-install usb:v041Ep3020d*dc*dsc*dp*ic*isc*ip* /sbin/modprobe snd-usb-audio
