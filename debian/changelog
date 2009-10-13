@@ -1,3 +1,9 @@
+udev-config-sidux (0.6.7) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 13 Oct 2009 14:53:01 +0200
+
 udev-config-sidux (0.6.6) unstable; urgency=low
 
   * drop obsolete modprobe overrides.
