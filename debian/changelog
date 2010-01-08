@@ -1,8 +1,12 @@
-udev-config-sidux (0.6.7) UNRELEASED; urgency=low
+udev-config-sidux (0.6.7) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * drop hal fdi preconfiguration for xserver-xorg-input-synaptics, stating
+    with 1.2.1-1, its configuration gets ignored n favour of udev rules and
+    /etc/xorg.conf.d/ snippets anyways.
+  * no longer recommends hal.
+  drop hal from the description.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 13 Oct 2009 14:53:01 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 08 Jan 2010 23:10:27 +0100
 
 udev-config-sidux (0.6.6) unstable; urgency=low
 

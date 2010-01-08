@@ -11,12 +11,5 @@ Package: udev-config-sidux
 Architecture: all
 Depends: ${misc:Depends},
  udev (>= 0.091-1)
-Recommends: hal
-Description: custom udev/ hal/ dbus configurations for udev
- Configure PCI IDs, udev events and hal policies needed by sidux.
- .
- This also provides hal policies to enable advanced touchpad features for:
-  - synaptics
-  - alps
-  - elantouch
-  - appletouch
+Description: custom udev configurations for udev
+ Configure PCI IDs and udev events needed by sidux.
