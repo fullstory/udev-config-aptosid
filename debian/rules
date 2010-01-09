@@ -3,7 +3,6 @@
 %:
 	dh $@
 
-override_dh_installmodules:
-	dh_installmodules
-	dh_installmodules --name=ieee1394
-	dh_installmodules --name=sidux
+override_dh_installudev:
+	dh_installudev
+	dh_installudev --name=xorg-synaptics-sidux --priority=65

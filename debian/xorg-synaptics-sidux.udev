@@ -1,0 +1,40 @@
+ACTION!="add|change", GOTO="xorg_synaptics_sidux_end"
+KERNEL!="event*", GOTO="xorg_synaptics_sidux_end"
+
+ENV{ID_INPUT_TOUCHPAD}!="1", GOTO="xorg_synaptics_sidux_end"
+
+ENV{x11_driver}="synaptics"
+
+ATTRS{name}=="SynPS/2 Synaptics TouchPad", \
+  ENV{x11_options.FingerHigh}="30", \
+  ENV{x11_options.MaxSpeed}="2.5", \
+  ENV{x11_options.FingerLow}="25", \
+  ENV{x11_options.TapButton1}="1", \
+  ENV{x11_options.MaxTapTime}="180", \
+  ENV{x11_options.VertEdgeScroll}="true", \
+  ENV{x11_options.AccelFactor}="0.012", \
+  ENV{x11_options.MinSpeed}="0.2", \
+  ENV{x11_options.VertScrollDelta}="100", \
+  ENV{x11_options.MaxTapMove}="220"
+
+ATTRS{name}=="AlpsPS/2 ALPS GlidePoint", \
+  ENV{x11_options.CircScrollDelta}="0.1", \
+  ENV{x11_options.FingerHigh}="15", \
+  ENV{x11_options.MaxSpeed}="3", \
+  ENV{x11_options.FingerLow}="14", \
+  ENV{x11_options.TapButton1}="1", \
+  ENV{x11_options.EmulateMidButtonTime}="75", \
+  ENV{x11_options.MaxTapTime}="180", \
+  ENV{x11_options.VertEdgeScroll}="true", \
+  ENV{x11_options.CircularScrolling}="1", \
+  ENV{x11_options.AccelFactor}="0.025", \
+  ENV{x11_options.MinSpeed}="0.70", \
+  ENV{x11_options.HorizScrollDelta}="20", \
+  ENV{x11_options.EdgeMotionMinSpeed}="15", \
+  ENV{x11_options.VertScrollDelta}="20", \
+  ENV{x11_options.UpDownScrolling}="1", \
+  ENV{x11_options.CircScrollTrigger}="2", \
+  ENV{x11_options.MaxTapMove}="110", \
+  ENV{x11_options.EdgeMotionMaxSpeed}="15"
+
+LABEL="xorg_synaptics_sidux_end"

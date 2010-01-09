@@ -1,8 +1,9 @@
-udev-config-sidux (0.6.8) UNRELEASED; urgency=low
+udev-config-sidux (0.7.0) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * switch touchpad rules to udev.
+  * drop handling for obsolete modprobe overrides.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 08 Jan 2010 23:11:08 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 09 Jan 2010 01:10:14 +0100
 
 udev-config-sidux (0.6.7) unstable; urgency=low
 
