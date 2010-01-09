@@ -1,3 +1,9 @@
+udev-config-sidux (0.7.1) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 09 Jan 2010 01:11:15 +0100
+
 udev-config-sidux (0.7.0) unstable; urgency=low
 
   * switch touchpad rules to udev.
