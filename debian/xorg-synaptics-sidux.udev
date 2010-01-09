@@ -52,7 +52,6 @@ ATTRS{name}=="ETPS/2 Elantech Touchpad", \
   ENV{x11_options.VertTwoFingerScroll}="1"
 
 ATTRS{name}=="appletouch", \
-  ENV{x11_options.SendCoreEvents}="true", \
   ENV{x11_options.FingerHigh}="30", \
   ENV{x11_options.MaxSpeed}="1", \
   ENV{x11_options.TapButton1}="1", \
