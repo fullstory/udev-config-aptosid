@@ -1,3 +1,9 @@
+udev-config-sidux (0.7.4) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 09 Jan 2010 22:56:31 +0100
+
 udev-config-sidux (0.7.3) unstable; urgency=low
 
   * loosen udev identifiers for synaptics.
