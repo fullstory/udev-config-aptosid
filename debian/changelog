@@ -1,9 +1,9 @@
-udev-config-sidux (0.7.1) UNRELEASED; urgency=low
+udev-config-sidux (0.7.1) unstable; urgency=low
 
-  * NOT RELEASED YET
   * add overrides for appletouch.
+  * add overrides for elantech.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 09 Jan 2010 13:44:41 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 09 Jan 2010 13:52:00 +0100
 
 udev-config-sidux (0.7.0) unstable; urgency=low
 

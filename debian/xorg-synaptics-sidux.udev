@@ -37,6 +37,20 @@ ATTRS{name}=="AlpsPS/2 ALPS GlidePoint", \
   ENV{x11_options.MaxTapMove}="110", \
   ENV{x11_options.EdgeMotionMaxSpeed}="15"
 
+ATTRS{name}=="ETPS/2 Elantech Touchpad", \
+  ENV{x11_options.Emulate3Buttons}="off", \
+  ENV{x11_options.MaxSpeed}="0.72", \
+  ENV{x11_options.CoastingSpeed}="0.13", \
+  ENV{x11_options.TapButton1}="1", \
+  ENV{x11_options.LBCornerButton}="2", \
+  ENV{x11_options.TapButton2}="2", \
+  ENV{x11_options.VertEdgeScroll}="true", \
+  ENV{x11_options.AccelFactor}="0.0320", \
+  ENV{x11_options.CircularScrolling}="1", \
+  ENV{x11_options.CircScrollTrigger}="8", \
+  ENV{x11_options.HorizTwoFingerScroll}="1", \
+  ENV{x11_options.VertTwoFingerScroll}="1"
+
 ATTRS{name}=="appletouch", \
   ENV{x11_options.SendCoreEvents}="true", \
   ENV{x11_options.FingerHigh}="30", \

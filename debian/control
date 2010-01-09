@@ -17,4 +17,5 @@ Description: custom udev configurations for udev
  This also provides udev rules to enable advanced touchpad features for:
   - synaptics
   - alps
+  - elantech
   - appletouch
