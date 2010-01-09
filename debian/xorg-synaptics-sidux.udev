@@ -37,4 +37,24 @@ ATTRS{name}=="AlpsPS/2 ALPS GlidePoint", \
   ENV{x11_options.MaxTapMove}="110", \
   ENV{x11_options.EdgeMotionMaxSpeed}="15"
 
+ATTRS{name}=="appletouch", \
+  ENV{x11_options.SendCoreEvents}="true", \
+  ENV{x11_options.FingerHigh}="30", \
+  ENV{x11_options.MaxSpeed}="1", \
+  ENV{x11_options.TapButton1}="1", \
+  ENV{x11_options.TapButton2}="2", \
+  ENV{x11_options.HorizEdgeScroll}="0", \
+  ENV{x11_options.VertEdgeScroll}="0", \
+  ENV{x11_options.AccelFactor}="0.0015", \
+  ENV{x11_options.TapButton3}="3", \
+  ENV{x11_options.FingerLow}="20", \
+  ENV{x11_options.PressureMotionMinZ}="10", \
+  ENV{x11_options.MaxTapTime}="100", \
+  ENV{x11_options.MinSpeed}="0.94", \
+  ENV{x11_options.HorizScrollDelta}="10", \
+  ENV{x11_options.VertScrollDelta}="10", \
+  ENV{x11_options.MaxTapMove}="20", \
+  ENV{x11_options.HorizTwoFingerScroll}="0", \
+  ENV{x11_options.VertTwoFingerScroll}="1"
+
 LABEL="xorg_synaptics_sidux_end"
