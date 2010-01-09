@@ -7,7 +7,7 @@ ENV{x11_driver}="synaptics"
 ENV{x11_options.TapButton1}="1"
 ENV{x11_options.VertEdgeScroll}="true"
 
-ATTRS{name}=="SynPS/2 Synaptics TouchPad", \
+ATTRS{name}=="SynPS/2*", \
   ENV{x11_options.FingerHigh}="30", \
   ENV{x11_options.MaxSpeed}="2.5", \
   ENV{x11_options.FingerLow}="25", \
@@ -17,7 +17,7 @@ ATTRS{name}=="SynPS/2 Synaptics TouchPad", \
   ENV{x11_options.VertScrollDelta}="100", \
   ENV{x11_options.MaxTapMove}="220"
 
-ATTRS{name}=="AlpsPS/2 ALPS GlidePoint", \
+ATTRS{name}=="AlpsPS/2*", \
   ENV{x11_options.CircScrollDelta}="0.1", \
   ENV{x11_options.FingerHigh}="15", \
   ENV{x11_options.MaxSpeed}="3", \
@@ -35,7 +35,7 @@ ATTRS{name}=="AlpsPS/2 ALPS GlidePoint", \
   ENV{x11_options.MaxTapMove}="110", \
   ENV{x11_options.EdgeMotionMaxSpeed}="15"
 
-ATTRS{name}=="ETPS/2 Elantech Touchpad", \
+ATTRS{name}=="ETPS/2*", \
   ENV{x11_options.Emulate3Buttons}="off", \
   ENV{x11_options.MaxSpeed}="0.72", \
   ENV{x11_options.CoastingSpeed}="0.13", \

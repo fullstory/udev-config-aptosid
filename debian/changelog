@@ -1,3 +1,9 @@
+udev-config-sidux (0.7.3) unstable; urgency=low
+
+  * loosen udev identifiers for synaptics.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 09 Jan 2010 22:55:57 +0100
+
 udev-config-sidux (0.7.2) unstable; urgency=low
 
   * apply tapping and vertical scrolling for all touchpads.
