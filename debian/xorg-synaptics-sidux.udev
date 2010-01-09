@@ -4,14 +4,14 @@ KERNEL!="event*", GOTO="xorg_synaptics_sidux_end"
 ENV{ID_INPUT_TOUCHPAD}!="1", GOTO="xorg_synaptics_sidux_end"
 
 ENV{x11_driver}="synaptics"
+ENV{x11_options.TapButton1}="1"
+ENV{x11_options.VertEdgeScroll}="true"
 
 ATTRS{name}=="SynPS/2 Synaptics TouchPad", \
   ENV{x11_options.FingerHigh}="30", \
   ENV{x11_options.MaxSpeed}="2.5", \
   ENV{x11_options.FingerLow}="25", \
-  ENV{x11_options.TapButton1}="1", \
   ENV{x11_options.MaxTapTime}="180", \
-  ENV{x11_options.VertEdgeScroll}="true", \
   ENV{x11_options.AccelFactor}="0.012", \
   ENV{x11_options.MinSpeed}="0.2", \
   ENV{x11_options.VertScrollDelta}="100", \
@@ -22,10 +22,8 @@ ATTRS{name}=="AlpsPS/2 ALPS GlidePoint", \
   ENV{x11_options.FingerHigh}="15", \
   ENV{x11_options.MaxSpeed}="3", \
   ENV{x11_options.FingerLow}="14", \
-  ENV{x11_options.TapButton1}="1", \
   ENV{x11_options.EmulateMidButtonTime}="75", \
   ENV{x11_options.MaxTapTime}="180", \
-  ENV{x11_options.VertEdgeScroll}="true", \
   ENV{x11_options.CircularScrolling}="1", \
   ENV{x11_options.AccelFactor}="0.025", \
   ENV{x11_options.MinSpeed}="0.70", \
@@ -41,10 +39,8 @@ ATTRS{name}=="ETPS/2 Elantech Touchpad", \
   ENV{x11_options.Emulate3Buttons}="off", \
   ENV{x11_options.MaxSpeed}="0.72", \
   ENV{x11_options.CoastingSpeed}="0.13", \
-  ENV{x11_options.TapButton1}="1", \
   ENV{x11_options.LBCornerButton}="2", \
   ENV{x11_options.TapButton2}="2", \
-  ENV{x11_options.VertEdgeScroll}="true", \
   ENV{x11_options.AccelFactor}="0.0320", \
   ENV{x11_options.CircularScrolling}="1", \
   ENV{x11_options.CircScrollTrigger}="8", \
@@ -54,10 +50,8 @@ ATTRS{name}=="ETPS/2 Elantech Touchpad", \
 ATTRS{name}=="appletouch", \
   ENV{x11_options.FingerHigh}="30", \
   ENV{x11_options.MaxSpeed}="1", \
-  ENV{x11_options.TapButton1}="1", \
   ENV{x11_options.TapButton2}="2", \
   ENV{x11_options.HorizEdgeScroll}="0", \
-  ENV{x11_options.VertEdgeScroll}="0", \
   ENV{x11_options.AccelFactor}="0.0015", \
   ENV{x11_options.TapButton3}="3", \
   ENV{x11_options.FingerLow}="20", \
