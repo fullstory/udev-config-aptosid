@@ -1,3 +1,9 @@
+udev-config-sidux (0.7.5) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 20 Jan 2010 03:59:49 +0100
+
 udev-config-sidux (0.7.4) unstable; urgency=low
 
   * clean up eventually left over /usr/sbin/policy-rc.d, which might not have
