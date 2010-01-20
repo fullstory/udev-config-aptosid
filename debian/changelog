@@ -1,8 +1,9 @@
-udev-config-sidux (0.7.4) UNRELEASED; urgency=low
+udev-config-sidux (0.7.4) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * clean up eventually left over /usr/sbin/policy-rc.d, which might not have
+    been cleaned up correctly by fll-installer << 0.5.12.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 09 Jan 2010 22:56:31 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 20 Jan 2010 03:59:00 +0100
 
 udev-config-sidux (0.7.3) unstable; urgency=low
 
