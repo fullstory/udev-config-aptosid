@@ -1,23 +1,6 @@
 #! /bin/sh
 set -e
 
-rm -f	/etc/modprobe.d/ieee1394.conf		\
-	/etc/modprobe.d/sidux.conf		\
-	/etc/modprobe.d/kanotix			\
-	/etc/modprobe.d/mac80211		\
-	/etc/modprobe.d/openfwwf		\
-	/etc/modprobe.d/openfwwf.conf		\
-	/etc/udev/bluetooth.rules		\
-	/etc/udev/elsa.rules			\
-	/etc/udev/networkfix.rules		\
-	/etc/udev/ttyACM.rules			\
-	/etc/udev/hisax.rules			\
-	/etc/udev/rules.d/010_networkfix.rules	\
-	/etc/udev/rules.d/bluetooth.rules	\
-	/etc/udev/rules.d/hisax.rules		\
-	/etc/udev/rules.d/z80_elsa.rules	\
-	/etc/udev/rules.d/z80_ttyACM.rules
-
 # clean up eventually left over /usr/sbin/policy-rc.d, which might not have
 # been cleaned up correctly by fll-installer << 0.5.12.
 if [ -f /usr/sbin/policy-rc.d ] && \

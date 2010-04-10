@@ -1,8 +1,13 @@
-udev-config-sidux (0.7.6) UNRELEASED; urgency=low
+udev-config-sidux (0.8.0) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * switch to dpkg-source 3.0 (native) format.
+  * switch to using xorg.conf.d based configuration snippets.
+  * update standards version to 3.8.4, no changes necessary.
+  * update debian/copyright, remove copyright holders whose contributions have
+    been obsoleted ages ago.
+  * remove obsolete system cleanups.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 21 Jan 2010 00:42:55 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 11 Apr 2010 00:05:30 +0200
 
 udev-config-sidux (0.7.5) unstable; urgency=low
 
