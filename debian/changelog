@@ -1,3 +1,9 @@
+udev-config-sidux (0.8.1) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 11 Apr 2010 00:07:15 +0200
+
 udev-config-sidux (0.8.0) unstable; urgency=low
 
   * switch to dpkg-source 3.0 (native) format.
