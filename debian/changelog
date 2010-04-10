@@ -1,8 +1,9 @@
-udev-config-sidux (0.8.1) UNRELEASED; urgency=low
+udev-config-sidux (0.8.1) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * Breaks: xserver-xorg-core (<< 2:1.7.6-2).
+  * clarify Description.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 11 Apr 2010 00:07:15 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 11 Apr 2010 00:52:39 +0200
 
 udev-config-sidux (0.8.0) unstable; urgency=low
 
