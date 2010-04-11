@@ -1,3 +1,9 @@
+udev-config-sidux (0.8.4) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 11 Apr 2010 21:54:04 +0200
+
 udev-config-sidux (0.8.3) unstable; urgency=low
 
   * restrict touchpad probing even more.
