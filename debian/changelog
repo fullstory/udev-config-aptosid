@@ -1,3 +1,9 @@
+udev-config-sidux (0.9.2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 18 Apr 2010 21:02:43 +0200
+
 udev-config-sidux (0.9.1) unstable; urgency=low
 
   * shorten synaptics rule names.
