@@ -1,1 +1,1 @@
-11-xorg-synaptics-sidux.conf	usr/lib/X11/xorg.conf.d/
+51-xorg-synaptics-sidux.conf	usr/share/X11/xorg.conf.d/

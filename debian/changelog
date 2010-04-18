@@ -1,8 +1,9 @@
-udev-config-sidux (0.8.4) UNRELEASED; urgency=low
+udev-config-sidux (0.9.0) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * move touchpad defaults to /usr/share/X11/xorg.conf.d/, as required by
+    xserver-xorg-core 2:1.7.6.901-2; adapt Breaks accordingly.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 11 Apr 2010 21:54:04 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 18 Apr 2010 20:50:33 +0200
 
 udev-config-sidux (0.8.3) unstable; urgency=low
 

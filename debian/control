@@ -11,7 +11,7 @@ Package: udev-config-sidux
 Architecture: all
 Depends: ${misc:Depends},
  udev (>= 0.091-1)
-Breaks: xserver-xorg-core (<< 2:1.7.6-2)
+Breaks: xserver-xorg-core (<< 2:1.7.6.901-2)
 Description: custom udev configurations for udev
  Configure PCI IDs and udev events needed by sidux.
  .
