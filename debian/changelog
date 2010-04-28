@@ -1,8 +1,8 @@
-udev-config-sidux (0.9.2) UNRELEASED; urgency=low
+udev-config-sidux (0.10.1) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * put KMS aware graphics modules into the initramfs.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 18 Apr 2010 21:02:43 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 28 Apr 2010 23:56:59 +0200
 
 udev-config-sidux (0.9.1) unstable; urgency=low
 

@@ -1,1 +1,2 @@
 51-synaptics-sidux.conf	usr/share/X11/xorg.conf.d/
+siduxfb			usr/share/initramfs-tools/hooks/
