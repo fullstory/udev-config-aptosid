@@ -1,3 +1,9 @@
+udev-config-sidux (0.10.4) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 05 May 2010 02:05:57 +0200
+
 udev-config-sidux (0.10.3) unstable; urgency=low
 
   * drop obsolete update-initramfs trigger in postinst, due to package updates
