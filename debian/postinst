@@ -11,13 +11,6 @@ case "$1" in
 		   [ "x$(md5sum -b /usr/sbin/policy-rc.d | awk '{print $1}')" = "x2f31905d39c6a4ed28a9217decbb7208" ]; then
 			rm -f /usr/sbin/policy-rc.d
 		fi
-
-		# recover from ill fated attempt to load i915/ radeon from 
-		# initramfs
-		if [ -x /usr/sbin/update-initramfs ] && \
-		   [ -e /etc/initramfs-tools/initramfs.conf ]; then
-			update-initramfs -u
-		fi
 		;;
 
 	abort-upgrade|abort-remove|abort-deconfigure)
