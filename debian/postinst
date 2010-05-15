@@ -11,6 +11,15 @@ case "$1" in
 		   [ "x$(md5sum -b /usr/sbin/policy-rc.d | awk '{print $1}')" = "x2f31905d39c6a4ed28a9217decbb7208" ]; then
 			rm -f /usr/sbin/policy-rc.d
 		fi
+
+		if [ -r /etc/default/rcS ]; then
+			. /etc/default/rcS
+			if [ -n "$CONCURRENCY" ] && \
+			   [ ! "$CONCURRENCY" = "makefile" ] && \
+			   [ ! "$CONCURRENCY" = "none" ]; then
+				sed -i "/^CONCURRENCY\=/d" /etc/default/rcS
+			fi
+		fi
 		;;
 
 	abort-upgrade|abort-remove|abort-deconfigure)

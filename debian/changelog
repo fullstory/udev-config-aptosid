@@ -1,8 +1,9 @@
-udev-config-sidux (0.10.4) UNRELEASED; urgency=low
+udev-config-sidux (0.10.4) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * hotfix: work around #581704, by removing CONCURRENCY=startpar and
+    misspelled variants.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 05 May 2010 02:05:57 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 15 May 2010 13:56:59 +0200
 
 udev-config-sidux (0.10.3) unstable; urgency=low
 
