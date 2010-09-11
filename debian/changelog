@@ -1,8 +1,8 @@
-udev-config-sidux (0.10.6) UNRELEASED; urgency=low
+udev-config-sidux (0.10.6) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * switch to compat level 8.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 04 Aug 2010 04:51:01 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 08 Aug 2010 05:34:48 +0200
 
 udev-config-sidux (0.10.5) unstable; urgency=low
 
