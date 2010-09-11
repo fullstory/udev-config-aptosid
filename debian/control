@@ -25,6 +25,7 @@ Description: custom udev configurations for udev
   - appletouch
 
 Package: udev-config-sidux
+Section: oldlibs
 Architecture: all
 Depends: ${misc:Depends},
  udev-config-aptosid
