@@ -1,19 +1,21 @@
-Source: udev-config-sidux
+Source: udev-config-aptosid
 Section: admin
 Priority: extra
 Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 Build-Depends: debhelper (>= 7.9.3)
 Standards-Version: 3.9.1
-Vcs-Svn: svn://svn.berlios.de/fullstory/udev-config-sidux/trunk
-Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/udev-config-sidux/trunk/
+Vcs-Svn: svn://svn.berlios.de/fullstory/udev-config-aptosid/trunk
+Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/udev-config-aptosid/trunk/
 
-Package: udev-config-sidux
+Package: udev-config-aptosid
 Architecture: all
 Depends: ${misc:Depends},
  udev (>= 0.091-1)
-Breaks: xserver-xorg-core (<< 2:1.7.6.901-2)
+Breaks: xserver-xorg-core (<< 2:1.7.6.901-2),
+ udev-config-sidux (<< 0.11)
+Replaces: udev-config-sidux (<< 0.11)
 Description: custom udev configurations for udev
- Configure PCI IDs and udev events needed by sidux.
+ Configure PCI IDs and udev events needed by aptosid.
  .
  This also provides xorg.conf.d snippets to enable advanced touchpad features
  for:
@@ -21,3 +23,19 @@ Description: custom udev configurations for udev
   - alps
   - elantech
   - appletouch
+
+Package: udev-config-sidux
+Architecture: all
+Depends: ${misc:Depends},
+ udev-config-aptosid
+Description: custom udev configurations for udev
+ Configure PCI IDs and udev events needed by aptosid.
+ .
+ This also provides xorg.conf.d snippets to enable advanced touchpad features
+ for:
+  - synaptics
+  - alps
+  - elantech
+  - appletouch
+ .
+ transitional metapackage to pull in udev-config-aptosid

@@ -1,8 +1,8 @@
-udev-config-sidux (0.10.7) UNRELEASED; urgency=low
+udev-config-aptosid (0.11.0) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * rename to aptosid.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 08 Aug 2010 05:35:08 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 29 Aug 2010 22:37:13 +0200
 
 udev-config-sidux (0.10.6) unstable; urgency=low
 
