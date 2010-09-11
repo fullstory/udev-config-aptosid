@@ -26,7 +26,7 @@ udev-config-sidux (0.10.3) unstable; urgency=low
 
 udev-config-sidux (0.10.2) unstable; urgency=low
 
-  * loading i915/ radeon from initramfs seems to introduce initialisation 
+  * loading i915/ radeon from initramfs seems to introduce initialisation
     problems on few systems, revert it for now.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 29 Apr 2010 13:36:53 +0200
@@ -179,7 +179,7 @@ udev-config-sidux (0.6.0) unstable; urgency=low
 udev-config-sidux (0.5.5) unstable; urgency=low
 
   * bump standards version to 3.8.1, no changes necessary.
-  * add hal policies for common touchpad types for evdev/ X.org 7.5, update 
+  * add hal policies for common touchpad types for evdev/ X.org 7.5, update
     package descriptions accordingly.
   * switch debhelper to using the dh_override_*.
 
@@ -187,7 +187,7 @@ udev-config-sidux (0.5.5) unstable; urgency=low
 
 udev-config-sidux (0.5.4) unstable; urgency=low
 
-  * drop fix-udev-lan, it's no longer required and has been broken for a 
+  * drop fix-udev-lan, it's no longer required and has been broken for a
     long time.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 28 Mar 2009 21:07:43 +0100
@@ -203,7 +203,7 @@ udev-config-sidux (0.5.2) unstable; urgency=low
   * rebuild against debhelper 7.2.2 and depend on it, to inherit the new
     dh_installmodules behaviour of adding a .conf suffix and handling the
     upgrade from older versions.
-  * document that the old firewire (CONFIG_IEEE1394) stack will not be built 
+  * document that the old firewire (CONFIG_IEEE1394) stack will not be built
     for sidux kernels >= 2.6.29 anymore; libraw1394 is now supposed to be
     compatible with its successor ("JuJu").
 
