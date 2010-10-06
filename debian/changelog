@@ -1,8 +1,8 @@
-udev-config-aptosid (0.11.2) UNRELEASED; urgency=low
+udev-config-aptosid (0.11.2) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * fix x-un-i's mail address.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 30 Aug 2010 12:52:09 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 06 Oct 2010 15:12:57 +0200
 
 udev-config-aptosid (0.11.1) unstable; urgency=low
 
@@ -396,7 +396,7 @@ udev-config-sidux (0.2.26) unstable; urgency=low
 
   * fixed mispelling
 
- -- Joaquim Boura <x-un-i@sidux.com>  Mon,  4 Dec 2006 15:09:20 +0100
+ -- Joaquim Boura <x-un-i@berlios.de>  Mon,  4 Dec 2006 15:09:20 +0100
 
 udev-config-sidux (0.2.25) unstable; urgency=low
 
