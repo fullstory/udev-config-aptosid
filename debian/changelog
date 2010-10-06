@@ -1,3 +1,9 @@
+udev-config-aptosid (0.11.3) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 06 Oct 2010 15:13:22 +0200
+
 udev-config-aptosid (0.11.2) unstable; urgency=low
 
   * fix x-un-i's mail address.
