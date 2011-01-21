@@ -11,9 +11,7 @@ Package: udev-config-aptosid
 Architecture: all
 Depends: ${misc:Depends},
  udev (>= 0.091-1)
-Breaks: xserver-xorg-core (<< 2:1.7.6.901-2),
- udev-config-sidux (<< 0.11)
-Replaces: udev-config-sidux (<< 0.11)
+Breaks: xserver-xorg-core (<< 2:1.7.6.901-2)
 Description: custom udev configurations for udev
  Configure PCI IDs and udev events needed by aptosid.
  .
@@ -23,20 +21,3 @@ Description: custom udev configurations for udev
   - alps
   - elantech
   - appletouch
-
-Package: udev-config-sidux
-Section: oldlibs
-Architecture: all
-Depends: ${misc:Depends},
- udev-config-aptosid
-Description: custom udev configurations for udev
- Configure PCI IDs and udev events needed by aptosid.
- .
- This also provides xorg.conf.d snippets to enable advanced touchpad features
- for:
-  - synaptics
-  - alps
-  - elantech
-  - appletouch
- .
- transitional metapackage to pull in udev-config-aptosid
