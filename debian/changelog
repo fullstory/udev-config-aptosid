@@ -1,8 +1,14 @@
-udev-config-aptosid (0.11.4) UNRELEASED; urgency=low
+udev-config-aptosid (0.11.4) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * drop no longer required synaptics overrides, as they can be detected more
+    reliably in X.org 1.9.x:
+    - FingerHigh
+    - MaxSpeed
+    - FingerLow
+    - AccelFactor
+    - MinSpeed
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 21 Jan 2011 14:10:05 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 13 Feb 2011 14:44:57 +0100
 
 udev-config-aptosid (0.11.3) unstable; urgency=low
 
