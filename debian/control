@@ -2,7 +2,7 @@ Source: udev-config-aptosid
 Section: admin
 Priority: extra
 Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
-Build-Depends: debhelper (>= 8)
+Build-Depends: debhelper (>= 9.20120115)
 Standards-Version: 3.9.2
 Vcs-Svn: svn://svn.berlios.de/fullstory/udev-config-aptosid/trunk
 Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/udev-config-aptosid/trunk/
