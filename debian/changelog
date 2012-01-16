@@ -1,8 +1,9 @@
-udev-config-aptosid (0.11.6) UNRELEASED; urgency=low
+udev-config-aptosid (0.11.6) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * switch to compat level 9.
+  * tighten udev rule for IR remotes.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 29 Apr 2011 05:05:50 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 16 Jan 2012 03:33:22 +0100
 
 udev-config-aptosid (0.11.5) unstable; urgency=low
 
