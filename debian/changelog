@@ -1,8 +1,9 @@
-udev-config-aptosid (0.11.8) UNRELEASED; urgency=low
+udev-config-aptosid (0.11.8) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * bump standards version to 3.9.4, no changes necessary.
+  * update FSF postal address to be URLs.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 23 Feb 2012 16:55:49 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 12 Jan 2013 03:38:13 +0100
 
 udev-config-aptosid (0.11.7) unstable; urgency=low
 
