@@ -3,16 +3,16 @@ Section: admin
 Priority: extra
 Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 Build-Depends: debhelper (>= 9.20120115)
-Standards-Version: 3.9.4
-Vcs-Svn: svn://svn.berlios.de/fullstory/udev-config-aptosid/trunk
-Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/udev-config-aptosid/trunk/
+Standards-Version: 3.9.5
+Vcs-git: git://github.com/fullstory/udev-config-aptosid.git
+Vcs-Browser: https://github.com/fullstory/udev-config-aptosid
 
 Package: udev-config-aptosid
 Architecture: all
 Depends: ${misc:Depends},
  udev (>= 0.091-1)
 Breaks: xserver-xorg-core (<< 2:1.7.6.901-2)
-Description: custom udev configurations for udev
+Description: custom udev configurations for aptosid
  Configure PCI IDs and udev events needed by aptosid.
  .
  This also provides xorg.conf.d snippets to enable advanced touchpad features
