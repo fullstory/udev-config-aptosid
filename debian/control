@@ -1,16 +1,16 @@
 Source: udev-config-aptosid
+Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 Section: admin
 Priority: extra
-Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 Build-Depends: debhelper (>= 9.20120115)
 Standards-Version: 3.9.6
-Vcs-git: git://github.com/fullstory/udev-config-aptosid.git
 Vcs-Browser: https://github.com/fullstory/udev-config-aptosid
+Vcs-Git: git://github.com/fullstory/udev-config-aptosid.git
 
 Package: udev-config-aptosid
 Architecture: all
 Depends: ${misc:Depends},
- udev (>= 0.091-1)
+ udev
 Breaks: xserver-xorg-core (<< 2:1.7.6.901-2)
 Description: custom udev configurations for aptosid
  Configure PCI IDs and udev events needed by aptosid.

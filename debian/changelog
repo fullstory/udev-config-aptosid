@@ -1,8 +1,8 @@
-udev-config-aptosid (0.11.11) UNRELEASED; urgency=medium
+udev-config-aptosid (0.11.11) unstable; urgency=medium
 
-  * NOT RELEASED YET
+  * drop versioned dependency on udev, it's met in stable.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 04 Jan 2015 00:53:31 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 04 Jan 2015 01:44:52 +0100
 
 udev-config-aptosid (0.11.10) unstable; urgency=medium
 
